@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+{{super()}}Inicio
+{% endblock %}
+
+{% block content %}
+    
+    <h1>¡Hola, estas registrado como un usuario tipo {{current_user.tipo}}, tu número de identificación es {{ current_user.userid }}!</h1>
+
+{% endblock %}
